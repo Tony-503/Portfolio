@@ -1,49 +1,107 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0%;
+      padding: 0%;
+    }
+    .container{
+      
+    width: 748px;
+ 
+    display: grid;
+    gap: 9px;
+    background-color: #000;
+    grid-template-columns: 320px 198px 153px 50px ;
+    grid-template-rows: 414px  130px 155px 22px;
+    }
+    
+    .one{
+     background-color: #e72d24;
+    }
+    .two{
+      background-color: #f0f1ec;
+      grid-column: span 3;
+    }
+
+    .three{
+      background-color: #f0f1ec;
+      grid-row: span 2;
+    }
+
+    .four{
+      background-color: #f0f1ec;
+      grid-area :2 / 2/ 4 / 4;
+    }
+
+    .five{
+      background-color: #004592;
+      border-bottom: solid 2px;
+    }
+
+    .six{
+      background-color: #f0f1ec;
+      grid-row: span 2;
+    }
+
+    .seven{
+      background-color: #f0f1ec;
+        }
+
+      .eight{
+        background-color: #f9d01e;
+      }
+
+      .nine{
+        background-color: rgb(31, 29, 29);
+      }
 
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 
 
-<h1>Tony H porfolio</h1>
+    
 
-<h2>I am I web developere and managment imformation major</h2>
+    
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
 
-<hr>
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
 
-<a href="./public/movie-ranking.html"><h2>Movie ranking</h2></a>
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
 
-<h2>Best movie acording to me </h3>
-<h3>my favoryte movies of all time</h3>
-<hr>
+    <div class="item one"></div>
+    <div class="item two"></div>
+    <div class="item three"></div>
+    <div class="item four"></div>
+    <div class="item five"></div>
+    <div class="item six"></div>
+    <div class="item seven"></div>
+    <div class="item eight"></div>
+    <div class="item nine"></div>
+   </div>
+</body>
 
-<h4>avatar</h4>
-<p>Blue guy th echarge body</p>
-
-
-<h4>jonh wick</h4>
-<p>guy whoo fight bad guy for living</p>
-
-<h4>Snoopy</h4>
-<p>my dog is fat and he like food so much</p>
-
-
-
-<a href="./public/birthday-invite.html"><h2>birthday-invite</h2></a>
-
-<h3>It is my birtday</h3>
-<h4>October 13 2003</h4>
-<img src="./assets/images/birthday-invite.png" width="200" alt="">
-<hr>
-<a href="./public/about.html">About Me</a> <a href="./public/contact.html">Contact ME</a>
+</html>
